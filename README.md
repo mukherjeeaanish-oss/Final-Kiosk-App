@@ -1,32 +1,38 @@
-# React + TypeScript + Vite
+# 🍛 Gama Gama Biriyani - Self-Ordering Kiosk
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Project-success?style=for-the-badge&logo=vercel)](https://final-kiosk-app.vercel.app/)
+[![Tech Stack](https://img.shields.io/badge/Tech-Vite%20|%20TypeScript%20|%20Tailwind-blue?style=for-the-badge)](#)
 
-Currently, two official plugins are available:
+A modern, interactive self-ordering kiosk web application designed for a seamless restaurant experience. Built with a focus on intuitive UI/UX, dynamic state management, and real-time user feedback.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+**Check out the live application here:** [https://final-kiosk-app.vercel.app/](https://final-kiosk-app.vercel.app/)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Dynamic Daily Menus:** The application automatically detects the current day of the week to display the correct active menu, with seamless toggling between Lunch and Dinner offerings.
+* **Smart Cart System:** Interactive `+` and `-` quantity controls integrated directly into the menu cards and cart modal for frictionless ordering.
+* **Table Booking Engine:** A visual table selection system that adapts based on party size:
+  * Table for 2 (`T2-X`)
+  * Table for 4 (`T4-X`)
+  * Family Tables (`FAM-X`)
+  * Includes randomized "occupied" states to simulate real-world restaurant capacity.
+* **Native Audio Feedback:** Custom-built sound effects utilizing the native **Web Audio API** for tactile button clicks, adding items to the cart, and successful order placements.
+* **Dedicated Dosai Section:** A grid-based persistent add-on section for hot items available all day.
+* **Mock Checkout Flow:** Supports simulated selections for Cash on Delivery (COD), UPI/QR, and Card payments, generating a randomized four-digit order number upon completion.
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* **Frontend Build Tool:** Vite
+* **Language:** TypeScript / JavaScript
+* **Styling:** CSS3 / Tailwind CSS
+* **Assets:** Custom mapped local assets and high-quality UI iconography (FontAwesome)
+* **Deployment:** Vercel
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 💻 Local Development
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+To run this project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/mukherjeeaanish-oss/Final-Kiosk-App.git](https://github.com/mukherjeeaanish-oss/Final-Kiosk-App.git)
