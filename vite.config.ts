@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/vite-plugin-react' // or vue/svelte depending on your framework
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/Final-Kiosk-App/', // <-- Add this exact line right here!
 })
